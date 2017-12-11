@@ -45,10 +45,12 @@ class SearchBar extends Component {
         );
     }
 }
+
 // lets hook our container SearchBar to our actionCreater fetchWeater
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({ fetchWeather }, dispatch); // makes sure the actions creator flows down to our middleware and down to our reducers
 }
 
-export default connect(null, mapDispatchToProps)(SearchBar);
+export default connect(null, mapDispatchToProps)(SearchBar); // connect takes a function and a component and produces a container
 // we pass null as first argument coz we dont need any state
+

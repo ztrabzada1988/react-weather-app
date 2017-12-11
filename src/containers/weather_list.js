@@ -47,4 +47,6 @@ function mapStateToProps({ weather }) { // same thing as const weather = state.w
     return { weather }; // same as weather: weather
 }
 
-export default connect(mapStateToProps)(WeatherList);
+export default connect(mapStateToProps)(WeatherList); 
+
+
